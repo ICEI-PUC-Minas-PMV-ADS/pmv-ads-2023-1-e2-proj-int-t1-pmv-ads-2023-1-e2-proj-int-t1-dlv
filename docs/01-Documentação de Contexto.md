@@ -1,46 +1,25 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A proposta desta aplicação interativa é fornecer aos usuários uma plataforma fácil e intuitiva, a fim de realizar pedidos em delivery num restaurante com opções saudáveis, para quem deseja manter a rotina com uma alimentação equilibrada, garantindo uma boa nutrição e funcionamento adequado do organismo. Com esta aplicação, os usuários poderão acessar o cardápio da loja, escolher os itens que desejam, inserir seu endereço para entrega e escolher a forma de pagamento. A solução proposta será uma interface responsiva, adaptável a dispositivos móveis, com design simples e limpo, a fim de tornar a experiência do usuário a mais agradável possível.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Uma alimentação saudável, completa e equilibrada é essencial para garantir uma vida de qualidade e bem-estar geral. No entanto, o aumento da produção de alimentos processados, a rápida urbanização e a mudança nos estilos de vida devido a pandemia de covid-19 deram lugar a uma alteração nos padrões alimentares. As pessoas agora consomem mais alimentos ricos em calorias, gorduras, açúcares livres e sal/sódio – e muitas não comem frutas, vegetais e outras fibras o suficiente. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo principal da aplicação é tornar o processo de fazer pedidos de delivery em uma loja específica o mais fácil e rápido possível para os usuários. Ao oferecer uma interface responsiva e intuitiva, acreditamos que os usuários terão uma experiência agradável e simples para realizar seus pedidos de delivery. Como objetivos específicos, podemos ressaltar:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+> Fornecer informações claras sobre o cardápio da loja, incluindo preços, opções de personalização e possíveis alergias. 
+
+>	Fornecer opções de entrega: permitir que os usuários escolham entre opções de entrega, como entrega em domicílio, retirada no local ou entrega expressa.
+
+>	Oferecer suporte a vários métodos de pagamento.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Como a rotina corrida da maioria dos brasileiros dificulta que eles mesmos preparem suas próprias refeições, o segmento de alimentação saudável entra como a alternativa mais atrativa e prática. Os pedidos de refeições pela internet ou por aplicativos tiveram uma maior demanda durante a pandemia de covid-19, segundo a pesquisa realizada pela Agência Brasil. O isolamento social fez com que essas	 pessoas aumentassem a confiança nas compras online e percebessem que comprar em lojas físicas não era a única opção, e isso foi essencial para o crescimento do delivery. Cada vez mais os consumidores estão optando por esta pratica, e muitas vezes o processo de fazer um pedido pode ser confuso e demorado. A justificativa é a necessidade de simplificar o processo de fazer pedidos de delivery em lojas específicas. Ao criar uma aplicação simples e intuitiva, esperamos tornar o processo de fazer um pedido de delivery mais fácil e agradável para os usuários.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público alvo é composto por pessoas de diferentes faixas etárias que visam ter uma alimentação saudável, que possuem alguma restrição alimentar, e buscam economizar tempo realizando pedidos de delivery em lojas específicas.
