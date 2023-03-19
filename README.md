@@ -1,23 +1,24 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`PROJETO - DESENVOLVIMENTO DE UMA APLICAÇÃO INTERATIVA`
 
-`SEMESTRE`
+`2º SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A proposta desta aplicação interativa é fornecer aos usuários uma plataforma fácil e intuitiva, a fim de realizar pedidos em delivery num restaurante com opções saudáveis, para quem deseja manter a rotina com uma alimentação equilibrada, garantindo uma boa nutrição e funcionamento adequado do organismo. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gustavo Marques de Mello
+* João Pedro Nonato Santos
+* Jose Vitor da Silva Sousa
+* Leonardo Germano da Costa
+* Renan Galvao Paulino
 
 ## Orientador
 
-* Nome completo do professor 1
+* Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
 
