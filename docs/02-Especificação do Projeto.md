@@ -1,26 +1,62 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Os usuários entrevistados estão demonstrados a seguir na forma de personas.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+### Maria Augusta
+- **Idade:** 27 anos.
+- **Ocupação:** Designer de interiores
+- **Aplicativos:** Instagram; Linkedin; Aplicativo de bancos.
+- **Motivações:** Qualidade de vida; Saúde; Sensação de bem- estar;
+- **Frustrações:** Dificuldade para selecionar alimentos; Pouca variedade de comida vegetariana nos principais aplicativos de delivery
+- **História:** Maria é vegetariana e costuma fazer pedidos de delivery pelo menos três vezes por semana devido a sua rotina agitada. Ela não gosta de ligar para fazer pedidos e prefere usar aplicativos ou sites para fazer seus pedidos.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+### André Ramos
+- **Idade:** 35 anos.
+- **Ocupação:** Desenvolvedor Back-end
+- **Aplicativos:** Facebook; Hotmail; Whatsapp.
+- **Motivações:** Saúde;
+- **Frustrações:** Dificuldade de  de seguir sua dieta, e de evitar alimentos calóricos e gordurosos
+- **História:** Andre possui problemas com sobrepeso e com
+a pandemia, ele parou de frequentar os restaurantes que faziam com que ele escolhesse somente alimentos saudáveis, forçando-o a usar aplicativos de delivery
+
+
+### João Gomes
+- **Idade:** 44 anos.
+- **Ocupação:** Engenheiro mecânico 
+- **Aplicativos:** Facebook; Hotmail; Whatsapp.
+- **Motivações:** Qualidade de vida; Saúde; Sensação de bem-estar; Estética.
+- **Frustrações:** Dificuldade para selecionar bons alimentos; Falta de tempo para preparar alimentos saudáveis
+- **História:**  João trabalha em tempo integral e muitas vezes não tem tempo para cozinhar. Ele faz pedidos de delivery para sua família pelo menos quatro vezes por semana, o que os induz a uma alimentação extremamente calórica e gordurosa. Pensando no bem estar de sua família, João pesquisa bastante procurando fazer pedidos mais saudáveis possíveis.
+
+
+### Rafaela Pereira
+- **Idade:** 34 anos.
+- **Ocupação:**  Empresária
+- **Aplicativos:** Facebook; Hotmail; Whatsapp.
+- **Motivações:** Qualidade de vida; Saúde
+- **Frustrações:**  Dificuldade de se manter na sua dieta
+- **História:** Rafaela tem dificuldades em manter uma boa alimentação devido a rotina diária de trabalho externo o que a obriga a usar aplicativos de delivery.  Dificuldade em encontrar alimentos que atendam a 
+a sua dieta de pouquíssimo carboidrato e muita proteína
+
+
+### Márcia Carvalho
+- **Idade:** 71 anos.
+- **Ocupação:**  Aposentada
+- **Aplicativos:** Whatsapp.
+- **Motivações:** Saúde;
+- **Frustrações:** Dificuldade em encontrar variedades em opções de alimentação com baixa caloria e de alimentos para diabéticos.
+- **História:** Márcia tem problemas com pressão alta e precisa evitar ao máximo alimentos calóricos.  Ela mora com seu marido que é diabético, o que faz com que  ela precise cozinhar para ela mesma e coisas diferentes ao seu marido, diante do cenário pandêmico a utilização de aplicativos de delivery se tornou comum em sua rotina diária
+
+### Alfredo Donato
+- **Idade:** 28 anos.
+- **Ocupação:** Corretor de imóveis.
+- **Aplicativos:** Hotmail; Whatsapp.
+- **Motivações:** Qualidade de vida;
+- **Frustrações:** Dificuldade em encontrar variedades em opções de alimentação que atendam ao público vegano.
+- **História:** Alfredo é vegano e não gosta de cozinhar. Mesmo com pouca variedade de cardápio, frequentemente faz pedidos em aplicativos de delivery.
+
 
 ## Histórias de Usuários
 
@@ -28,50 +64,69 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Maria Augusta | Pesquisar restaurantes vegetarianos geograficamente mais próximos | Escolher entre as opções disponíveis de forma fácil e rápida|
+|João Gomes  | melhor visualizar os menus dos restaurantes disponíveis          | Decidir o que pedir para sua família |
+|Rafaela Pereira  | Salvar endereços de entrega e informações de pagamento no aplicativo          | Fazer pedidos mais rapidamente em futuras ocasiões |
+|Maria Augusta  | Personalizar sua ordem adicionando ou removendo ingredientes          | Ter uma refeição personalizada e de acordo com seu gosto |
+|João Gomes  | selecionar os alimentos mais saudáveis possíveis para seus filhos        | contribuir com a saúde de sua família reduzindo o consumo de alimentos não saudáveis |
+|Rafaela Pereira  | Fazer pedidos agendados para uma data e hora específicas        | Planejar melhor suas refeições durante sua rotina de trabalho|
+|Maria Augusta  | Avaliar e deixar feedback sobre os restaurantes         | Ajudar outros usuários a escolher os melhores lugares |
+|João Gomes  | Ver avaliações e comentários de outros usuários sobre os restaurantes         | Fazer uma escolha  mais consciente |
+|Rafaela Pereira  | Facilidade em selecionar e efetuar um pedido, onde claramente é descrito sua composição         | Ter acesso a opções e cardápios que sejam interessantes e que atendam minha restrição alimentar. |
+|Maria Augusta, João Gomes  | Ter um aplicativo fácil de usar, responsivo e rápido         | Fazer pedidos de forma conveniente e sem complicações |
+|Rafaela Pereira  | Saber claramente as especificações dos alimentos pesquisados       | Consumir alimentos ricos em proteínas e pobres em carboidratos conforme sua dieta|
+|André Ramos  | Ter acesso a um vasto cardápio de tipos diferentes de alimentos e suas respectivas avaliações      | Conhecer novos alimentos e novos sabores, objetivando facilitar o processo de seguir a sua dieta |
+|Alfredo Donato  | Aplicar um filtro ao qual selecione uma lista de alimentos veganos        | Facilidade de escolha de alimentos veganos |
+|Márcia Carvalho | Aplicar filtro tendo como base determinado restaurante         | Ter agilidade e facilidade na consulta do cardápio de determinado restaurante |
+|Alfredo Donato, Márcia Carvalho, André Ramos | Preço mais em conta nas refeições         | Preço bem mais elevado do que as refeições normais. |
+|André Ramos, Alfredo Donato  | Cadastrar lista de restaurantes e pedidos  favoritos no próprio perfil.         | Maior facilidade de selecionar os pedidos favoritos |
+|Márcia Carvalho | Utilizar ficha de cadastro clara e objetiva ao criar novo perfil      | Facilitar o processo de cadastra na aplicação para pessoas que não tenham familiaridade com aplicativos de delivery |
+|Márcia Carvalho  | Ter uma área de ajuda onde possui orientação sobre como utilizar todas as funcionalidades da aplicação        | Ter maior facilidade de utilizar a aplicação e  efetuar pedidos  |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+As tabelas que se seguem apresentam respectivamente os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Listar cardápio: Exibir foto, nome, composição e preço de cada item do cardápio.| ALTA | 
+|RF-002| Realizar login rápido: Permitir que os usuários façam login de forma rápida e fácil, sem a necessidade de inserir uma senha.   | Média |
+|RF-003| Escolher forma de pagamento: Permitir que os usuários escolham a forma de pagamento para concluir a transação.  | Alta |
+|RF-004| Personalizar o pedido: Permitir que os usuários adicionem observações personalizadas para o pedido, como preferências de cozimento,  ingredientes adicionais e restrição a determinado tipo de ingrediente e etc.  | Média |
+|RF-005| Cardápio separado por categoria: Dividir o cardápio em categorias para facilitar a navegação e a busca por itens específicos.   | Média |
+|RF-006| Pesquisar por comida: Permitir que os usuários pesquisem por comida utilizando palavras-chave ou termos de busca.  | Alta |
+|RF-007| Ver horário de funcionamento: Exibir o horário de funcionamento do estabelecimento para que os usuários saibam quando podem fazer pedidos   | Baixa |
+|RF-008| Links para redes sociais: Incluir links para as redes sociais do estabelecimento para que os usuários possam se conectar e interagir com a marca.   | Baixa |
+|RF-009| Adicionar item ao carrinho: permitir que os usuários adicionem itens ao carrinho a partir da página do cardápio.  | Alta |
+|RF-010| Remover item do carrinho: permitir que os usuários removam itens do carrinho antes de concluir o pedido. | Média |
+|RF-011| Visualizar carrinho: permitir que os usuários visualizem os itens que estão no carrinho e o valor total. | Alta |
+|RF-012| Calcular subtotal: calcular automaticamente o subtotal do pedido com base nos itens selecionados.  | Média |
+|RF-013| Calcular o valor total do pedido: incluindo o valor dos itens, taxas de entrega e impostos, se aplicável.  | Alta |
+|RF-014| Fornecer opções de entrega: permitir que os usuários escolham entre opções de entrega, como entrega em domicílio, retirada no local ou entrega expressa.   | Média |
+|RF-015| Permitir que os usuários adicionem e editem endereços: permitir que os usuários adicionem e editem endereços de entrega, permitindo que eles escolham de uma lista de endereços ou adicione novos endereços de entrega. | Média |
+|RF-016| Oferecer suporte a vários métodos de pagamento: permitir que os usuários paguem por seu pedido usando uma variedade de métodos de pagamento, como cartões de crédito, dinheiro ou pix que serão recebidos durante o ato da entrega.  | Alta |
+|RF-017| Oferecer  uma opção para filtrar toda a lista de cardápio, podendo ser a partir do tipo de comida (vegana, vegetariana e etc) e também a partir do restaurante  | Alta |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Versionamento usando Git e repositório no Github | Alta | 
+|RNF-002| Deploy Frontend: Vercel |  Média|
+|RNF-003| Stack frontend: Typescript, React |  Alta| 
+|RNF-004| Deploy Backend: Azure |  Média| 
+|RNF-005| Stack Backend: .Net, Postgres, Docker |  Alta| 
+|RNF-006| Segurança: proteção adequada dos dados do usuário |  Alta|
+|RNF-007| Desempenho: garantir que a plataforma seja responsiva e rápida |  Alta| 
+|RNF-008| Escalabilidade: capacidade de lidar com um aumento significativo no número de usuários e pedidos sem comprometer o desempenho ou a funcionalidade.|  Alta| 
+|RNF-009| Internacionalização: suporte a múltiplos idiomas e moedas | Média| 
+|RNF-010| Acessibilidade: garantir que a plataforma seja acessível a todos | Média| 
+|RNF-011| Personalização da interface do usuário |  Baixa| 
+|RNF-012| Monitoramento de desempenho: monitorar e analisar o desempenho da plataforma para identificar e corrigir possíveis gargalos ou problemas de desempenho. |  Alta| 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -79,25 +134,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre letivo, não podendo extrapolar a data de 19/06/2023. |
+|02| A aplicação deverá ser construída utilizando apenas o framework ASP.NET usando a linguagem C#, e o banco de dados Microsoft SQL Server.      |
+|03| A equipe de projeto será restrita aos membros do grupo.       |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
