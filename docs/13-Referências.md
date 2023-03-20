@@ -1,7 +1,3 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+Agência Brasil - Jonas Valente (2021). Disponível em: <https://agenciabrasil.ebc.com.br/geral/noticia/2021-12/pesquisa-revela-aumento-de-pedidos-de-comida-por-app-durante-pandemia>
