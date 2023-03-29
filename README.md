@@ -15,6 +15,7 @@ A proposta desta aplicação interativa é fornecer aos usuários uma plataforma
 * Jose Vitor da Silva Sousa
 * Leonardo Germano da Costa
 * Renan Galvao Paulino
+* Thiago Luiz Clemente
 
 ## Orientador
 
