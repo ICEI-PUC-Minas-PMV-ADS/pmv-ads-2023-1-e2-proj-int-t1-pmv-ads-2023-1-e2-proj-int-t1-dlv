@@ -76,8 +76,9 @@ Organização:
 -	Em teste: tarefas concluídas que estão sendo testadas para fins de verificação
 -	Concluído: tarefas que foram concluídas e verificadas por meio de testes
 
+![Foto Representativa](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t1-pmv-ads-2023-1-e2-proj-int-t1-dlv/blob/main/docs/img/Trello.jpeg)
 
-
+Tela do Trello utilizada pelo grupo 
 
 A plataforma pode pode ser acessada em: https://trello.com/b/2CjWAiZs/projeto-puc-grupo-3
 
