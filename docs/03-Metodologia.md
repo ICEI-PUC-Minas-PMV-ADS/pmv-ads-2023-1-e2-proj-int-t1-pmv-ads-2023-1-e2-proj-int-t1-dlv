@@ -35,35 +35,52 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza metodologias ágeis, tendo como base o Scrum, afim de tornar os processos mais simples e claros, e deixar os registros visíveis sobre o andamento de todas as etapas para os integrantes do grupo por meio do Trello. 
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+A organização da equipe se dá da seguinte forma:
+
+-	Scrum Master: 
+
+-	Product Owner: 
+
+Equipe de Desenvolvimento:
+
+-	Gustavo Marques de Mello
+-	João Pedro Nonato Santos
+-	Jose Vitor da Silva Sousa
+-	Leonardo Germano da Costa
+-	Renan Galvao Paulino
+-	Thiago Luiz Clemente
+
+Equipe de Design:
+
+-	Gustavo Marques de Mello
+-	João Pedro Nonato Santos
+-	Jose Vitor da Silva Sousa
+-	Leonardo Germano da Costa
+-	Renan Galvao Paulino
+-	Thiago Luiz Clemente
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Como centro de gerenciamento de tarefas foi escolhido a ferramenta Trello. Está plataforma possibilita o controle de qualquer tipo de projeto, fluxo de trabalho ou monitoramento de tarefas, alinhado às necessidades de metodologias ágeis. 
+
+Organização:
+
+-	A fazer: o backlog priorizado de recursos do produto planejado para o sprint atual
+-	Em andamento: a lista de tarefas que já foram iniciadas
+-	Em teste: tarefas concluídas que estão sendo testadas para fins de verificação
+-	Concluído: tarefas que foram concluídas e verificadas por meio de testes
+
+
+
+
+A plataforma pode pode ser acessada em: https://trello.com/b/2CjWAiZs/projeto-puc-grupo-3
+
 
 ### Ferramentas
 As ferramentas utilizadas no projeto estão abaixo enumeradas:
