@@ -7,10 +7,10 @@ O desenvolvimento deste projeto, foi iniciado para criarmos uma plataforma fáci
 
 | Ambiente                           | Plataforma        | Link de Acesso                                                                      |
 |------------------------------------|-------------------|-------------------------------------------------------------------------------------|
-| Repositório de código fonte        | GitHub            |                            |
-| Documentos do projeto              | GitHub            |              |
-| Projeto de Interface e  Wireframes | Figma             | 
-| Gerenciamento do Projeto           | GitHub - Projects |                           |
+| Repositório de código fonte        | GitHub            | https://github.com/                           |
+| Documentos do projeto              | GitHub            | https://github.com/             |
+| Projeto de Interface e  Wireframes | Figma             | https://www.figma.com/
+| Gerenciamento do Projeto           | Trello | https://trello.com/b/2CjWAiZs/projeto-puc-grupo-3                          |
 |Ferramenta para controle de versão| Git | https://git-scm.com/ |
 
 ## Controle de Versão
