@@ -76,7 +76,8 @@ As ferramentas utilizadas no projeto estão abaixo enumeradas:
 **Ferramentas de Comunicação e Organização:**
 - [Microsoft Teams](https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software): Ferramenta utilizada para realizar as reuniões de equipe, assim como as reuniões semanais em conjunto com a coordenadora do projeto.
 - [Microsoft Office](https://www.office.com/): Ferramenta utilizada em suas diversas funcionalidades. O Microsoft Word foi usado para a confecção da documentação do projeto, o Power Point foi a ferramenta escolhida para a apresentação da proposta de projeto. O próprio sistema Office serviu como local de compartilhamento de documentos.
-- [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/crypto-conversor/projects?type=beta): Ferramenta utilizada para a organização e separação de tarefas no projeto.
+- [Trello](https://trello.com/b/2CjWAiZs/projeto-puc-grupo-3): Ferramenta utilizada para a organização e separação de tarefas no projeto.
+
 
 **Ferramentas de Desenho de Tela (_wireframing_):**
 - [Canva](https://www.canva.com/): Ferramenta utilizada como um protótipo na realização do _design_ do projeto de interface.
