@@ -12,6 +12,7 @@ O desenvolvimento deste projeto, foi iniciado para criarmos uma plataforma fáci
 | Projeto de Interface e  Wireframes | Figma             | https://www.figma.com/
 | Gerenciamento do Projeto           | Trello | https://trello.com/b/2CjWAiZs/projeto-puc-grupo-3                          |
 |Ferramenta para controle de versão| Git | https://git-scm.com/ |
+|Reunião Semanal| Teams | https://www.microsoft.com/pt-br/microsoft-teams/log-in |
 
 ## Controle de Versão
 
