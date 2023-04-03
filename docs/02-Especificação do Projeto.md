@@ -4,13 +4,14 @@
 
 Os usuários entrevistados estão demonstrados a seguir na forma de personas.
 
-### Maria Augusta
-- **Idade:** 27 anos.
-- **Ocupação:** Designer de interiores
-- **Aplicativos:** Instagram; Linkedin; Aplicativo de bancos.
-- **Motivações:** Qualidade de vida; Saúde; Sensação de bem- estar;
-- **Frustrações:** Dificuldade para selecionar alimentos; Pouca variedade de comida vegetariana nos principais aplicativos de delivery
-- **História:** Maria é vegetariana e costuma fazer pedidos de delivery pelo menos três vezes por semana devido a sua rotina agitada. Ela não gosta de ligar para fazer pedidos e prefere usar aplicativos ou sites para fazer seus pedidos.
+| **![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t1-pmv-ads-2023-1-e2-proj-int-t1-dlv/blob/main/docs/img/Maria%20Augusta.png)** | **Maria Augusta**                                                                                                                                                                                                            |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Idade**                                                                                                                                                 | 27 anos                                                                                                                                                                                                                      |
+| **Ocupação**                                                                                                                                              | Designer de interiores.                                                                                                                                                                                                      |
+| **Aplicativos**                                                                                                                                           | Instagram; Linkedin; Aplicativo de bancos.                                                                                                                                                                                   |
+| **Motivações**                                                                                                                                            | Qualidade de vida; Saúde; Sensação de bem- estar.                                                                                                                                                                            |
+| **Frustrações**                                                                                                                                           | Dificuldade para selecionar alimentos; Pouca variedade de comida vegetariana nos principais aplicativos de delivery.                                                                                                         |
+| **História**                                                                                                                                              | Maria é vegetariana e costuma fazer pedidos de delivery pelo menos três vezes por semana devido a sua rotina agitada. Ela não gosta de ligar para fazer pedidos e prefere usar aplicativos ou sites para fazer seus pedidos. |
 
 ### André Ramos
 - **Idade:** 35 anos.
