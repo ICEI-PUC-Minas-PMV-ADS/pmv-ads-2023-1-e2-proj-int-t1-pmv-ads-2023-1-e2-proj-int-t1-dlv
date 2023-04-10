@@ -10,9 +10,10 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Modelo ER (Projeto Conceitual)
 
-![Modelo Entidade Relacionamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t1-pmv-ads-2023-1-e2-proj-int-t1-dlv/blob/f227f2fb08a27c2ae3cce5eab3d1af17b8fc56f9/docs/img/M_E_R.png)
+![Modelo Entidade Relacionamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t1-pmv-ads-2023-1-e2-proj-int-t1-dlv/blob/develop/docs/img/MER.jpg)
 ## Projeto da Base de Dados
 
+![Projeto da Base de Dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t1-pmv-ads-2023-1-e2-proj-int-t1-dlv/blob/f227f2fb08a27c2ae3cce5eab3d1af17b8fc56f9/docs/img/DER.jpg)
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
