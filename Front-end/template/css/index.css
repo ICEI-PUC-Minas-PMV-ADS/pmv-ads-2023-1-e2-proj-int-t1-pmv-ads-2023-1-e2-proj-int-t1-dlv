@@ -1,0 +1,87 @@
+html, body, main {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.header-option ul{
+    list-style: none;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    background-color: rgb(200, 255, 200);
+    height: 88.5vh
+}
+
+aside{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(11, 90, 11);
+}
+
+.sugestions{
+    width: 90%;
+}
+
+.filtros{ 
+    background-color: rgb(28, 170, 85);
+}
+
+.filtros ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: blueviolet;
+}
+
+
+
+
+
+.form{
+    height: 50vh;
+}
+
+/*login*/
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    border: rgb(86, 136, 25) solid;
+    width: 18%;
+    height: 70%;
+}
+
+.login-form div {
+
+}
+
+
+/*register*/
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    border: rgb(25, 148, 249) solid;
+    width: 18%;
+    height: 70%;
+    align-items: flex-end;
+}
