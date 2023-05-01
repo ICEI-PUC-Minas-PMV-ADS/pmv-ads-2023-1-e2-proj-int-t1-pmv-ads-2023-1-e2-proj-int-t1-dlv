@@ -5,6 +5,7 @@ html, body, main {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    height: 100%;
 }
 
 .body{
@@ -15,7 +16,7 @@ html, body, main {
 .header{
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(48, 159, 218);
 }
 
 .header-option{
@@ -89,40 +90,99 @@ aside{
 }
 
 
-
-
-
-
 .form{
     height: 50vh;
 }
 
 /*login*/
 
+.container{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 226, 207);
+    /* background: linear-gradient(200deg, red,blue); */
+}
 
 .login-form{
+    width: 300px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login{
     display: flex;
     flex-direction: column;
-    border: rgb(86, 136, 25) solid;
-    width: 18%;
-    height: 70%;
+    margin-bottom: 10px;
 }
 
-.login-form div {
-
+.login > label{
+    margin-bottom: 5px;
 }
 
+.login > input{
+    height: 20px;
+}
+
+.senha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.senha > label{
+    margin-bottom: 5px;
+}
+
+.senha > input{
+    height: 20px;
+}
+
+.semCadastro{
+    margin-top: 10px;
+}
+
+.botaoLogin > button{
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
 
 /*register*/
 
 .register-form {
+    width: 300px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.register-form > div > label{
     display: flex;
     flex-direction: column;
-    border: rgb(25, 148, 249) solid;
-    width: 18%;
-    height: 70%;
-    align-items: flex-end;
+    margin-bottom: 1px;
+    margin-top: 010px;
+    height: 20px;
 }
+
+.botaoRegistrar > button{
+    background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+    margin-top: 20px;
+}
+
 
 @media screen and (min-width: 750px) {
     aside{

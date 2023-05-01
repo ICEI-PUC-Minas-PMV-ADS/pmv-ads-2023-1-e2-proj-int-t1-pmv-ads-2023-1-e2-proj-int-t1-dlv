@@ -8,22 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="form">
-        <form class="login-form">
-            <div class="login-input">
-                <label for="login">Login: </label>
-                <input type="text" name="login">
-            </div>
-            <div>
-                <label for="password">Senha: </label>
-                <input type="text" name="password">
-            </div>
-        </form>
-        <button class="login-button">Entrar</button>
-        <a href="register.html">Não possui cadastro?</a>
-        <a href="template.html">
-            <button class="register-button">Voltar</button>
-        </a>  
-    </main>
+    <div class="container">
+		<form class="login-form">
+			<h2>Login</h2>
+                <div class="login">
+			    <label for="username">Email</label>
+			    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="senha">
+			    <label for="password">Senha</label>
+			    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="botaoLogin">
+			    <button type="submit" href="./template.html">Entrar</button>
+                <button href="./template.html">Voltar</button>
+                </div>
+                <div class="semCadastro">
+                <a href="./register.html">Não possui cadastro???</a>
+                </div>
+		</form>
+	</div>
 </body>
 </html>
