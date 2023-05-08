@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace back_end.models
 {
     [Table("produto")]
     public class Produto
     {
-
-        [Column("id")]
+        [Key, Column("id")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         [Column("nome")]
         public String nome { get; set; }
@@ -22,10 +23,11 @@ namespace back_end.models
         public String imagem { get; set; }
         [Column("is_active")]
         public bool IsActive { get; set; }
-        [ForeignKey("restaurante")]
+       
         public int restaurante_id { get; set; }
-        [ForeignKey("produto_id")]
-        public ICollection<Pedido> Pedido { get; set; }
+        public Restaurante Restaurante { get; set; }
+
+        public ICollection<Pedido> Pedido { get; } = new List<Pedido>();
         
     }
 }

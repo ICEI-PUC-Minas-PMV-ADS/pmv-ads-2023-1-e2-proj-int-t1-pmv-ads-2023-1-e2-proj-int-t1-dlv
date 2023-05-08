@@ -1,4 +1,5 @@
 using back_end.models;
+using back_end.Repository;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
@@ -13,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddEntityFrameworkNpgsql()
     .AddDbContext<Contexto>(options => 
         options.UseNpgsql("HOST=localhost;port=5432;Pooling=true;Database=delivery;User id=postgres;Password=postgres;"));
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
 
