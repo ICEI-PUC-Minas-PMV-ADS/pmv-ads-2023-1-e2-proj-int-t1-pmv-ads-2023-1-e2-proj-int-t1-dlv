@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace back_end.models
@@ -5,7 +6,8 @@ namespace back_end.models
     [Table("endereco")]
     public class Endereco
     {
-        [Column("id")]
+        [Key, Column("id")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         [Column("CEP")]
         public String CEP { get; set; }
@@ -15,12 +17,12 @@ namespace back_end.models
         public String numero { get; set; }
         [Column("bairro")]
         public String bairro { get; set; }
-        [ForeignKey("endereco_id")]
-        public ICollection<EnderecoUsuario> EnderecoUsuario { get; set; }
-        [ForeignKey("endereco_id")]
-        public ICollection<Restaurante> Restaurante { get; set; }
-        [ForeignKey("endereco_id")]
-        public ICollection<Pedido> Pedido { get; set; }
+        
+        public ICollection<EnderecoUsuario> EnderecoUsuario { get; } = new List<EnderecoUsuario>();
+
+        public ICollection<Restaurante> Restaurante { get; } = new List<Restaurante>();
+
+        public ICollection<Pedido> Pedido { get; } = new List<Pedido>();
 
     }
 }

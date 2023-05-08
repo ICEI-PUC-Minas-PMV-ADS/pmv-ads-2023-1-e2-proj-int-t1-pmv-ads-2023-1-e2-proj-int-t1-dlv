@@ -1,17 +1,22 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace back_end.models
 {
     [Table("pedido")]
     public class Pedido
     {
-        [Column("id")]
+        [Key, Column("id")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        [ForeignKey("usuario")]
+        
         public int usuario_id { get; set; }
-        [ForeignKey("endereco")]
+        public Usuario Usuario { get; set; }
+        
         public int endereco_id { get; set; }
-        [ForeignKey("produto")]
+        public Endereco Endereco { get; set; }
+        
         public int produto_id { get; set; }
+        public Produto Produto { get; set; }
     }
 }

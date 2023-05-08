@@ -64,12 +64,14 @@ namespace back_end.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_active");
-
                     b.Property<int>("endereco_id")
                         .HasColumnType("integer");
+
+                    b.Property<bool>("isActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(true)
+                        .HasColumnName("is_active");
 
                     b.Property<int>("usuario_id")
                         .HasColumnType("integer");
@@ -211,6 +213,11 @@ namespace back_end.Migrations
                         .HasColumnType("text")
                         .HasColumnName("nome");
 
+                    b.Property<string>("senha")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("senha");
+
                     b.HasKey("id");
 
                     b.ToTable("usuario");
@@ -218,56 +225,69 @@ namespace back_end.Migrations
 
             modelBuilder.Entity("back_end.models.EnderecoUsuario", b =>
                 {
-                    b.HasOne("back_end.models.Endereco", null)
+                    b.HasOne("back_end.models.Endereco", "Endereco")
                         .WithMany("EnderecoUsuario")
                         .HasForeignKey("endereco_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("back_end.models.Usuario", null)
+                    b.HasOne("back_end.models.Usuario", "Usuario")
                         .WithMany("EnderecoUsuario")
                         .HasForeignKey("usuario_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Endereco");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("back_end.models.Pedido", b =>
                 {
-                    b.HasOne("back_end.models.Endereco", null)
+                    b.HasOne("back_end.models.Endereco", "Endereco")
                         .WithMany("Pedido")
                         .HasForeignKey("endereco_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("back_end.models.Produto", null)
+                    b.HasOne("back_end.models.Produto", "Produto")
                         .WithMany("Pedido")
                         .HasForeignKey("produto_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("back_end.models.Usuario", null)
+                    b.HasOne("back_end.models.Usuario", "Usuario")
                         .WithMany("Pedido")
                         .HasForeignKey("usuario_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Endereco");
+
+                    b.Navigation("Produto");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("back_end.models.Produto", b =>
                 {
-                    b.HasOne("back_end.models.Restaurante", null)
+                    b.HasOne("back_end.models.Restaurante", "Restaurante")
                         .WithMany("Produto")
                         .HasForeignKey("restaurante_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Restaurante");
                 });
 
             modelBuilder.Entity("back_end.models.Restaurante", b =>
                 {
-                    b.HasOne("back_end.models.Endereco", null)
+                    b.HasOne("back_end.models.Endereco", "Endereco")
                         .WithMany("Restaurante")
                         .HasForeignKey("endereco_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Endereco");
                 });
 
             modelBuilder.Entity("back_end.models.Endereco", b =>
