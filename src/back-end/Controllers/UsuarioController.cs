@@ -1,5 +1,7 @@
 using back_end.models;
 using back_end.Repository;
+using back_end.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace back_end.Controllers
@@ -20,15 +22,17 @@ namespace back_end.Controllers
             return Ok(await repository.buscaUsuarios());
         }
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetAsync(int id)
         {
             return Ok(await repository.buscaUsuario(id));
         }
         [HttpPost]
-        public async Task<IActionResult> PostAsync(Usuario usuario)
+        public async Task<ActionResult<dynamic>> PostAsync(Usuario usuario)
         {
             repository.adicionaUsuario(usuario);
-            return await repository.SaveChangesAsync() ? Ok("Success") : BadRequest("Fail");
+            var token = TokenService.GenerateToken(usuario);
+            return await repository.SaveChangesAsync() ? new { user = new { usuario.nome, usuario.email }, token } : BadRequest("Fail");
         }
         [HttpPut]
         public async Task<IActionResult> PutAsync(Usuario usuario)
