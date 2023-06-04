@@ -8,20 +8,20 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 import SignupStyle from './style';
+import { schemas } from '../../services';
 import { NavBar } from '../../components';
 
+
 const Signup = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      name: data.get('firstName'),
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
+
+const { register, handleSubmit, formState:{errors} } = useForm({resolver: yupResolver(schemas.signup)});
+
+const handleForm = data => console.log(data);
+
 
   return (
        <SignupStyle>
@@ -41,7 +41,7 @@ const Signup = () => {
                 <Typography component="h1" variant="h5">
                     Cadastro
                 </Typography>
-                <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                <Box component="form" noValidate onSubmit={handleSubmit(handleForm)} sx={{ mt: 3 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <TextField
@@ -52,19 +52,12 @@ const Signup = () => {
                             id="firstName"
                             label="Nome"
                             autoFocus
+                            {...register('name')}
+                            error={!!errors.name}
+                            helperText={errors.name?.message}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField
-                            required
-                            fullWidth
-                            id="lastName"
-                            label="Sobre nome"
-                            name="lastName"
-                            autoComplete="family-name"
-                            />
-                        </Grid>
-                        <Grid item xs={12}>
                             <TextField
                             required
                             fullWidth
@@ -72,6 +65,9 @@ const Signup = () => {
                             label="E-mail"
                             name="email"
                             autoComplete="email"
+                            {...register('email')}
+                            error={!!errors.email}
+                            helperText={errors.email?.message}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -83,6 +79,22 @@ const Signup = () => {
                             type="password"
                             id="password"
                             autoComplete="new-password"
+                            {...register('password')}
+                            error={!!errors.password}
+                            helperText={errors.password?.message}
+                            />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField
+                            required
+                            fullWidth
+                            id="confirm_password"
+                            label="Confirmar senha"
+                            name="confirm_password"
+                            autoComplete="confirm_password"
+                            {...register('confirm_password')}
+                            error={!!errors.confirm_password}
+                            helperText={errors.confirm_password?.message}
                             />
                         </Grid>
                     </Grid>

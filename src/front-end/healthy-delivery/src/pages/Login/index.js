@@ -8,20 +8,19 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { useForm } from 'react-hook-form' 
+import {yupResolver} from '@hookform/resolvers/yup'
 
 import LoginStyle from './style';
+import { schemas } from '../../services';
 import { NavBar } from '../../components';
+
 
 const Login = () => {
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
+  const {register, handleSubmit, formState: {errors}} = useForm({resolver: yupResolver(schemas.login)})
+
+  const handleForm = (data) => console.log(data)
 
   return (
       <LoginStyle>
@@ -41,16 +40,19 @@ const Login = () => {
             <Typography component="h1" variant="h5">
               Login
             </Typography>
-            <Box component="form" className='form-container' onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+            <Box component="form" className='form-container' onSubmit={handleSubmit(handleForm)} noValidate sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
                 required
                 fullWidth
-                id="email"
                 label="E-mail"
+                id="email"
                 name="email"
                 autoComplete="email"
                 autoFocus
+                {...register('email')}
+                error={!!errors.email}
+                helperText={errors.email?.message}
               />
               <TextField
                 margin="normal"
@@ -61,6 +63,9 @@ const Login = () => {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                {...register('password')}
+                error={!!errors.password}
+                helperText={errors.password?.message}
               />
               <Button
                 type="submit"

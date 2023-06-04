@@ -1,4 +1,5 @@
 import api from "./api";
+import { schemas } from "./schema";
 
 const orders = [
     {
@@ -45,4 +46,4 @@ const orders = [
     }
 ];
 
-export {orders, api}
+export {orders, api, schemas}
