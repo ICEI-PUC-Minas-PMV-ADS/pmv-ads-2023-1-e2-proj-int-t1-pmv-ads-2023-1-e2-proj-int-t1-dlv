@@ -1,10 +1,10 @@
-import { Home, Login, Signup, Dashboard } from './pages';
+import { Home, Login, Signup, Dashboard, Cart } from './pages';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Dashboard />
+        <Cart/>
       </header>
     </div>
   );
