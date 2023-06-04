@@ -1,11 +1,10 @@
-import './App.css';
-import { Home } from './pages';
+import { Home, Login, Signup, Dashboard } from './pages';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home />
+        <Dashboard />
       </header>
     </div>
   );
