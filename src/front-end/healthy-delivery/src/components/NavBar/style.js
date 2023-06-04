@@ -28,7 +28,12 @@ const NavBarStyle = styled.div`
     }
 
     .div-buttons button{
-        margin-right: 1.5vh;
+        /* margin-right: 1.5vh; */
+        margin: 0 1.5vh 0 0;
+    }
+
+    .div-buttons .MuiBadge-badge{
+        margin-right: 10px;
     }
 `
 
