@@ -17,6 +17,7 @@ const Signup = () => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      name: data.get('firstName'),
       email: data.get('email'),
       password: data.get('password'),
     });
@@ -38,7 +39,7 @@ const Signup = () => {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Sign up
+                    Cadastro
                 </Typography>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
                     <Grid container spacing={2}>
@@ -49,7 +50,7 @@ const Signup = () => {
                             required
                             fullWidth
                             id="firstName"
-                            label="First Name"
+                            label="Nome"
                             autoFocus
                             />
                         </Grid>
@@ -58,7 +59,7 @@ const Signup = () => {
                             required
                             fullWidth
                             id="lastName"
-                            label="Last Name"
+                            label="Sobre nome"
                             name="lastName"
                             autoComplete="family-name"
                             />
@@ -68,7 +69,7 @@ const Signup = () => {
                             required
                             fullWidth
                             id="email"
-                            label="Email Address"
+                            label="E-mail"
                             name="email"
                             autoComplete="email"
                             />
@@ -78,7 +79,7 @@ const Signup = () => {
                             required
                             fullWidth
                             name="password"
-                            label="Password"
+                            label="Senha"
                             type="password"
                             id="password"
                             autoComplete="new-password"
@@ -91,7 +92,7 @@ const Signup = () => {
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                     >
-                    Sign Up
+                    Fazer cadastro
                     </Button>
                     <Grid container justifyContent="flex-end">
                     <Grid item>

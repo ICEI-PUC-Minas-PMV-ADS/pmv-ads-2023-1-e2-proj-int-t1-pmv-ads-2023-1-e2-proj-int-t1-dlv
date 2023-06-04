@@ -11,7 +11,16 @@ const CartItem = ({order}) => {
   const {price, name, img} = order
 
   return (
-    <Card sx={{ display: 'flex', alignItems: 'center', width: '32vw', height:'10vh', mb: 3, overflow:'unset' }}>
+    <Card 
+        sx={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            width: '32vw', 
+            height:'10vh', 
+            mb: 3, 
+            overflow:'unset' 
+        }}
+    >
         <CardMedia
             sx={{ height: '10vh', width: 125, borderRadius:'4px 0 0 4px' }}
             image= {img}

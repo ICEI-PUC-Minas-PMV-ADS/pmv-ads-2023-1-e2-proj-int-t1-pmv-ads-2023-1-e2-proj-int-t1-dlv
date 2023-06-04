@@ -1,3 +1,4 @@
+import api from "./api";
 
 const orders = [
     {
@@ -44,4 +45,4 @@ const orders = [
     }
 ];
 
-export {orders}
+export {orders, api}

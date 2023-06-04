@@ -23,8 +23,6 @@ const Login = () => {
     });
   };
 
-
-
   return (
       <LoginStyle>
         <NavBar type='login'/>
@@ -41,7 +39,7 @@ const Login = () => {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Login
             </Typography>
             <Box component="form" className='form-container' onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
               <TextField
@@ -49,7 +47,7 @@ const Login = () => {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="E-mail"
                 name="email"
                 autoComplete="email"
                 autoFocus
@@ -59,7 +57,7 @@ const Login = () => {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="Senha"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -70,7 +68,7 @@ const Login = () => {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                Logar
               </Button>
               <Grid container>
                 <Grid item>
