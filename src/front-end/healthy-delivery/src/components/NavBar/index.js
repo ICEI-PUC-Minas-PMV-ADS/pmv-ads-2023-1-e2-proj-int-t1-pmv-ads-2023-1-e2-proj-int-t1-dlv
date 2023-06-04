@@ -1,5 +1,6 @@
 import Button  from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
+import { Link } from "@mui/material";
 
 import NavBarStyle from "./style";
 
@@ -28,7 +29,7 @@ const NavBar = ({type='default'}) => {
                             sx={{ mt: 3, mb: 2 }}
                             color="warning"
                         >
-                        Home
+                            <Link href={'/'} underline="none" color={'#FFFFFF'}>Home</Link> 
                         </Button>
                     </div>
                 }
@@ -40,7 +41,7 @@ const NavBar = ({type='default'}) => {
                             sx={{ mt: 3, mb: 2 }}
                             color="warning"
                         >
-                            Home
+                           <Link href={'/'} underline="none" color={'#FFFFFF'}>Home</Link> 
                         </Button>
                         <Badge
                             anchorOrigin={{vertical: 'top', horizontal: 'right'}}
@@ -53,7 +54,7 @@ const NavBar = ({type='default'}) => {
                                 sx={{ mt: 3, mb: 2 }}
                                 color="warning"
                             >
-                                Carrinho
+                                <Link href={'/cart'} underline="none" color={'#FFFFFF'}>Carrinho</Link> 
                             </Button>
                         </Badge>
                     </div>
@@ -66,7 +67,7 @@ const NavBar = ({type='default'}) => {
                             sx={{ mt: 3, mb: 2 }}
                             color="warning"
                         >
-                            Home
+                            <Link href={'/'} underline="none" color={'#FFFFFF'}>Home</Link> 
                         </Button>
                         <Button
                             type="submit"
@@ -74,7 +75,7 @@ const NavBar = ({type='default'}) => {
                             sx={{ mt: 3, mb: 2 }}
                             color="warning"
                         >
-                            Dashboard
+                            <Link href={'/dashboard'} underline="none" color={'#FFFFFF'}>Dashboard</Link>
                         </Button>
                     </div>
                 }

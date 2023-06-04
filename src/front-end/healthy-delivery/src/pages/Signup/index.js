@@ -108,7 +108,7 @@ const handleForm = data => console.log(data);
                     </Button>
                     <Grid container justifyContent="flex-end">
                     <Grid item>
-                        <Link href="#" variant="body2">
+                        <Link href="/login" variant="body2">
                         Já é cadastrado? Logar
                         </Link>
                     </Grid>

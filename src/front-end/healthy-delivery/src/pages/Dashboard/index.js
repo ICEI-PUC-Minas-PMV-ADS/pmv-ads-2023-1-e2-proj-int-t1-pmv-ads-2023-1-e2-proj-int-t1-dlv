@@ -2,6 +2,7 @@
 import { NavBar, OrderCard } from "../../components";
 import { orders } from "../../services";
 import DashboardStyle from "./style";
+import { useState } from "react";
 
 const Dashboard = () => {
 

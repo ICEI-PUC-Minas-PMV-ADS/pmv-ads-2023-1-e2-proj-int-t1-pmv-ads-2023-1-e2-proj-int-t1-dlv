@@ -1,10 +1,5 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { Link, Button } from '@mui/material';
 
 import { NavBar } from "../../components";
 import HomeStyle from "./style";
@@ -23,7 +18,7 @@ const Home = () => {
                         sx={{ mt: 3, mb: 2 }}
                         color="warning"
                     >
-                        Logar
+                        <Link href={'/login'} underline="none" color={'#FFFFFF'}>Logar</Link> 
                     </Button>
                     <Button
                         type="submit"
@@ -31,7 +26,7 @@ const Home = () => {
                         sx={{ mt: 3, mb: 2 }}
                         color="success"
                     >
-                        Registrar-se
+                        <Link href={'/signup'} underline="none" color={'#FFFFFF'}>Fazer cadastro</Link> 
                     </Button>
                 </div>
             </div>
