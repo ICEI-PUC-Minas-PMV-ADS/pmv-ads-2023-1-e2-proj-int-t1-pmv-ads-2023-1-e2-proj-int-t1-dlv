@@ -14,16 +14,28 @@ import {yupResolver} from '@hookform/resolvers/yup'
 import LoginStyle from './style';
 import { schemas } from '../../services';
 import { NavBar } from '../../components';
+import { useAppProvider } from '../../providers';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+  
+  const { signIn, token } = useAppProvider()
+  
+  const history = useNavigate()
+  console.log(token)
+  if (token) {
+    console.log(token)
+    history('/dashboard')
+  } 
 
   const {register, handleSubmit, formState: {errors}} = useForm({resolver: yupResolver(schemas.login)})
-
-  const handleForm = (data) => console.log(data)
+  const handleForm = (data) => signIn(data)
+ 
 
   return (
       <LoginStyle>
+
         <NavBar type='login'/>
         <Container component="main" maxWidth="xs">
           <Box

@@ -1,11 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
+import { useAppProvider } from "../providers";
 import { Home, Login, Signup, Dashboard, Cart } from "../pages";
 
 
 const PageRoutes = () => {
-
-    const token = false
 
     return(
         <Routes>
@@ -14,11 +13,11 @@ const PageRoutes = () => {
             <Route path="/signup" element={<Signup />}/>
             <Route 
                 path="/cart" 
-                element={token ? <Cart /> : <Navigate to={"/login"} />}
+                element={<Cart /> }
             />
             <Route 
                 path="/dashboard" 
-                element={token ? <Dashboard /> : <Navigate to={"/login"} />}
+                element={<Dashboard />}
             />
         </Routes>
     )

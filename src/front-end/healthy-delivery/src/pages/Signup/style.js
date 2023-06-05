@@ -5,5 +5,4 @@ const SignupStyle = styled.div`
     }
 `
 
-
 export default SignupStyle;

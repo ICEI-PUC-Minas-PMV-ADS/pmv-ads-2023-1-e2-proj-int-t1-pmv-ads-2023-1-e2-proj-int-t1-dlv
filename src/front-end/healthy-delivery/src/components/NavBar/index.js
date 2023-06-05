@@ -3,6 +3,7 @@ import Badge from "@mui/material/Badge";
 import { Link } from "@mui/material";
 
 import NavBarStyle from "./style";
+import { useAppProvider } from "../../providers";
 
 const NavBar = ({type='default'}) => {
 
@@ -13,6 +14,8 @@ const NavBar = ({type='default'}) => {
     if (type === 'cart') isCart = true;
     if (type === 'dashboard') isDashboard = true;
     if (type === 'signup' || type === 'login') isSignUpIn = true;
+
+    const {logout } = useAppProvider()
 
 
     return(
@@ -40,6 +43,15 @@ const NavBar = ({type='default'}) => {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                             color="warning"
+                            onClick={logout}
+                        >
+                           <Link href={'/'} underline="none" color={'#FFFFFF'}>Sair</Link> 
+                        </Button>
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            sx={{ mt: 3, mb: 2 }}
+                            color="warning"
                         >
                            <Link href={'/'} underline="none" color={'#FFFFFF'}>Home</Link> 
                         </Button>
@@ -61,6 +73,15 @@ const NavBar = ({type='default'}) => {
                 }
                 {isCart && 
                     <div className="div-buttons">
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            sx={{ mt: 3, mb: 2 }}
+                            color="warning"
+                            onClick={logout}
+                        >
+                           <Link href={'/'} underline="none" color={'#FFFFFF'}>Sair</Link> 
+                        </Button>
                         <Button
                             type="submit"
                             variant="contained"

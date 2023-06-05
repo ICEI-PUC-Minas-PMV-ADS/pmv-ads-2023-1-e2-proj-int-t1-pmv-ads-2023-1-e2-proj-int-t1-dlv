@@ -5,5 +5,4 @@ const LoginStyle = styled.div`
     }
 `
 
-
 export default LoginStyle;
