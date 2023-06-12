@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useContext } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -15,12 +16,17 @@ import SignupStyle from './style';
 import { schemas } from '../../services';
 import { NavBar } from '../../components';
 
+const { useAppProvider } = require('../../providers');
+
 
 const Signup = () => {
 
 const { register, handleSubmit, formState:{errors} } = useForm({resolver: yupResolver(schemas.signup)});
+const  { signUp } = useAppProvider();
 
-const handleForm = data => console.log(data);
+const handleForm = async (data) => {
+   await signUp(data);
+};
 
 
   return (
@@ -52,9 +58,9 @@ const handleForm = data => console.log(data);
                             id="firstName"
                             label="Nome"
                             autoFocus
-                            {...register('name')}
-                            error={!!errors.name}
-                            helperText={errors.name?.message}
+                            {...register('nome')}
+                            error={!!errors.nome}
+                            helperText={errors.nome?.message}
                             />
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -79,9 +85,9 @@ const handleForm = data => console.log(data);
                             type="password"
                             id="password"
                             autoComplete="new-password"
-                            {...register('password')}
-                            error={!!errors.password}
-                            helperText={errors.password?.message}
+                            {...register('senha')}
+                            error={!!errors.senha}
+                            helperText={errors.senha?.message}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -95,6 +101,19 @@ const handleForm = data => console.log(data);
                             {...register('confirm_password')}
                             error={!!errors.confirm_password}
                             helperText={errors.confirm_password?.message}
+                            />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <TextField
+                            required
+                            fullWidth
+                            id="celular"
+                            label="Celular"
+                            name="celular"
+                            autoComplete="celular"
+                            {...register('celular')}
+                            error={!!errors.celular}
+                            helperText={errors.celular?.message}
                             />
                         </Grid>
                     </Grid>

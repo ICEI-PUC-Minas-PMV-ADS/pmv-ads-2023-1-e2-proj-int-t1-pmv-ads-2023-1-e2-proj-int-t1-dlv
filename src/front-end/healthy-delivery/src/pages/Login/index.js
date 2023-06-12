@@ -30,7 +30,10 @@ const Login = () => {
   } 
 
   const {register, handleSubmit, formState: {errors}} = useForm({resolver: yupResolver(schemas.login)})
-  const handleForm = (data) => signIn(data)
+  const handleForm = async (data) => { 
+    console.log(data);
+    await signIn(data)
+  }
  
 
   return (
@@ -75,9 +78,9 @@ const Login = () => {
                 type="password"
                 id="password"
                 autoComplete="current-password"
-                {...register('password')}
-                error={!!errors.password}
-                helperText={errors.password?.message}
+                {...register('senha')}
+                error={!!errors.senha}
+                helperText={errors.senha?.message}
               />
               <Button
                 type="submit"

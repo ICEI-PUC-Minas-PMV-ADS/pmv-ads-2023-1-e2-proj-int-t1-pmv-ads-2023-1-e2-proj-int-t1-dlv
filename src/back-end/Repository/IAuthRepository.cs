@@ -8,6 +8,6 @@ namespace back_end.Repository
 {
     public interface IAuthRepository
     {
-        Usuario login(string nome, string senha, string email);
+        Usuario login(string senha, string email);
     }
 }

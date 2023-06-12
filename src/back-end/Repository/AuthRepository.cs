@@ -18,9 +18,9 @@ namespace back_end.Repository
             this.context = context;
         }
         
-        public Usuario login(string nome, string senha, string email)
+        public Usuario login(string senha, string email)
         {
-            Usuario usuario = context.Usuarios.Where(x => x.nome == nome).First<Usuario>();
+            Usuario usuario = context.Usuarios.Where(x => x.email == email).First<Usuario>();
             if (usuario == null)
             {
                 throw new Exception("Usuário não encontrado");
