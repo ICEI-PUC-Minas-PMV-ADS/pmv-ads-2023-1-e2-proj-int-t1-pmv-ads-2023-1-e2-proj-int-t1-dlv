@@ -1,5 +1,5 @@
 
-import { NavBar, OrderCard } from "../../components";
+import { Footer, NavBar, OrderCard } from "../../components";
 import { orders } from "../../services";
 import DashboardStyle from "./style";
 import { useNavigate } from "react-router-dom";
@@ -25,6 +25,7 @@ const Dashboard = () => {
                     {orders.map( (order, key) => <OrderCard order={order} key={key}/> )}
                 </div>
             </div>
+            <Footer />
         </DashboardStyle>
     )
 };

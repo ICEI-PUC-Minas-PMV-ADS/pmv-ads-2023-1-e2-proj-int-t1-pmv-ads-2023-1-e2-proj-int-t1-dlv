@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 
 import CartStyle from "./style";
 import { orders } from "../../services";
-import { NavBar, CartItem } from "../../components";
+import { NavBar, CartItem, Footer } from "../../components";
 import { Navigate } from "react-router-dom";
 import { useAppProvider } from "../../providers";
 import { useNavigate, redirect } from "react-router-dom";
@@ -38,6 +38,7 @@ const Cart = () => {
                     </Button>
                 </div>
             </div>
+            <Footer />
         </CartStyle>
     )
 }

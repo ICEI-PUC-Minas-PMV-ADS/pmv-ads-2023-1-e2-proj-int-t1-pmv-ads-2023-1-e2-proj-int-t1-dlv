@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import { AppProvider } from "../providers";
 import { Home, Login, Signup, Dashboard, Cart } from "../pages";
+import { Footer } from "../components";
 
 
 const PageRoutes = () => {

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link, Button } from '@mui/material';
 
-import { NavBar } from "../../components";
+import { NavBar, Footer } from "../../components";
 import HomeStyle from "./style";
 
 
@@ -30,6 +30,7 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
+            <Footer />
         </HomeStyle>
     )
 };

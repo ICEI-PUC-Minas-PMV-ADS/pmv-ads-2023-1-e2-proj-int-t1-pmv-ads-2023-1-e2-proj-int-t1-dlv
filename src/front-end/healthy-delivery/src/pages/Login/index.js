@@ -13,7 +13,7 @@ import {yupResolver} from '@hookform/resolvers/yup'
 
 import LoginStyle from './style';
 import { schemas } from '../../services';
-import { NavBar } from '../../components';
+import { NavBar, Footer } from '../../components';
 import { useAppProvider } from '../../providers';
 import { Navigate, useNavigate } from 'react-router-dom';
 
@@ -47,6 +47,7 @@ const Login = () => {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              height: '69vh'
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -100,6 +101,7 @@ const Login = () => {
             </Box>
           </Box>
         </Container>
+        <Footer />
       </LoginStyle>
 
   );

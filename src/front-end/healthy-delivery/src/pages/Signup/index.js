@@ -14,7 +14,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import SignupStyle from './style';
 import { schemas } from '../../services';
-import { NavBar } from '../../components';
+import { NavBar, Footer } from '../../components';
 
 const { useAppProvider } = require('../../providers');
 
@@ -35,10 +35,10 @@ const handleForm = async (data) => {
             <Container component="main" maxWidth="xs">
                 <Box
                 sx={{
-                    marginTop: 8,
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
+                    height:'78vh',
                 }}
                 >
                 <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -135,6 +135,7 @@ const handleForm = async (data) => {
                 </Box>
                 </Box>
             </Container>
+            <Footer />
        </SignupStyle> 
   );
 };
