@@ -20,6 +20,7 @@ const CartStyle = styled.div`
 
     .pay-info{
         width: 35%;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,6 +29,10 @@ const CartStyle = styled.div`
 
     .pay-info h1{
         color:#e65100
+    }
+
+    .pay-method{
+        padding-bottom: 135px
     }
 `
 
