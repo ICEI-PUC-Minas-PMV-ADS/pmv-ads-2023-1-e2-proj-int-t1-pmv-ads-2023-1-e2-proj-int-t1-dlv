@@ -3,6 +3,7 @@ import Badge from "@mui/material/Badge";
 import { Link } from "@mui/material";
 
 import NavBarStyle from "./style";
+import SearchBar from "../SearchBar";
 import { useAppProvider } from "../../providers";
 
 const NavBar = ({type='default'}) => {
@@ -36,8 +37,9 @@ const NavBar = ({type='default'}) => {
                         </Button>
                     </div>
                 }
-                {isDashboard && 
+                {isDashboard &&
                     <div className="div-buttons">
+                        <SearchBar /> 
                         <Button
                             type="submit"
                             variant="contained"
