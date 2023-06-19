@@ -10,11 +10,8 @@ A proposta desta aplicação interativa é fornecer aos usuários uma plataforma
 
 ## Integrantes
 
-* Gustavo Marques de Mello
 * João Pedro Nonato Santos
 * Jose Vitor da Silva Sousa
-* Leonardo Germano da Costa
-* Renan Galvao Paulino
 * Thiago Luiz Clemente
 
 ## Orientador
