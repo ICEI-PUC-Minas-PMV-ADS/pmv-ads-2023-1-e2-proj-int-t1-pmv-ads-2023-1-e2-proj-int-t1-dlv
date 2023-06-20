@@ -23,6 +23,9 @@ const SearchBar = () => {
                             setValue({
                                 title: newValue,
                             });
+
+                            console.log('????????????',newValue)
+                            getItem(newValue);
                         } else if (newValue && newValue.inputValue) {
                         // Create a new value from the user input
                             setValue({
