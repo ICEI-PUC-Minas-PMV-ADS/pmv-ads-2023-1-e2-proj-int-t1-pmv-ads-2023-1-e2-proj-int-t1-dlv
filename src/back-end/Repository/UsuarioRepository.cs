@@ -18,12 +18,21 @@ namespace back_end.Repository
         {
             this.context = context;
         }
-        public void adicionaUsuario(Usuario usuario)
+        public async void adicionaUsuario(Usuario usuario, Endereco endereco)
         {
            String senhaCadastrada = _hashService.CriptografarSenha(usuario.senha);
            usuario.senha = senhaCadastrada;
+           usuario.role = "user";
 
-           context.Usuarios.Add(usuario);
+           
+           var ende = context.Enderecos.Add(endereco);
+           var user = context.Usuarios.Add(usuario);
+           using var transaction = context.Database.BeginTransaction();
+              await context.SaveChangesAsync();
+            transaction.Commit();
+           
+           EnderecoUsuario enderecoUsuario = new EnderecoUsuario(user.Entity.id, ende.Entity.id);
+           context.EnderecoUsuarios.Add(enderecoUsuario);
         }
 
         public Task<IEnumerable<Usuario>> buscaUsuario(int id)

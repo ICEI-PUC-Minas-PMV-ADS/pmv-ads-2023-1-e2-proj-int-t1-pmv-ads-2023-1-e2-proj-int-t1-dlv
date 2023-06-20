@@ -19,6 +19,9 @@ namespace back_end.models
         [Column("email")]
         public String email { get; set; }
 
+        [Column("role")]
+        public String role { get; set; }
+
         public ICollection<EnderecoUsuario> EnderecoUsuario { get; } = new List<EnderecoUsuario>();
 
         public ICollection<Pedido> Pedido { get; } = new List<Pedido>();

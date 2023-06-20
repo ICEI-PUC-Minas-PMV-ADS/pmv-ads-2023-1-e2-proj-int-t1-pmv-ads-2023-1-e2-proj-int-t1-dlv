@@ -1,3 +1,4 @@
+using back_end.DTO;
 using back_end.models;
 using back_end.Repository;
 using back_end.Services;
@@ -28,9 +29,11 @@ namespace back_end.Controllers
             return Ok(await repository.buscaUsuario(id));
         }
         [HttpPost]
-        public async Task<ActionResult<dynamic>> PostAsync(Usuario usuario)
+        public async Task<ActionResult<dynamic>> PostAsync(UsuarioDTO req)
         {
-            repository.adicionaUsuario(usuario);
+            var usuario = req.usuario;
+            var endereco = req.endereco;
+            repository.adicionaUsuario(usuario, endereco);
             var token = TokenService.GenerateToken(usuario);
             return await repository.SaveChangesAsync() ? new { user = new { usuario.nome, usuario.email }, token } : BadRequest("Fail");
         }

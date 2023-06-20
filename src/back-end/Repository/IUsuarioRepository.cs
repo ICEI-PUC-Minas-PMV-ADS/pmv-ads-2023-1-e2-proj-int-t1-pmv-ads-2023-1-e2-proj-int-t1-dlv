@@ -8,7 +8,7 @@ namespace back_end.Repository
         Task<IEnumerable<Usuario>> buscaUsuario(int id);
         Task<IEnumerable<Usuario>> buscaUsuarios();
 
-        void adicionaUsuario(Usuario usuario);
+        void adicionaUsuario(Usuario usuario, Endereco endereco);
 
         void updateUsuario(Usuario usuario);
 

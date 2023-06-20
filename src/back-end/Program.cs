@@ -20,6 +20,8 @@ builder.Services.AddEntityFrameworkNpgsql()
         options.UseNpgsql("HOST=localhost;port=5432;Pooling=true;Database=delivery;User id=postgres;Password=postgres;"));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 var key = System.Text.Encoding.ASCII.GetBytes("123456");
 builder.Services.AddAuthentication(x => {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

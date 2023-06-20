@@ -9,8 +9,8 @@ namespace back_end.models
         [Key, Column("id")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        [Column("CEP")]
-        public String CEP { get; set; }
+        [Column("cep")]
+        public String cep { get; set; }
         [Column("rua")]
         public String rua { get; set; }
         [Column("numero")]

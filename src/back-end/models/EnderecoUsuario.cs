@@ -20,5 +20,12 @@ namespace back_end.models
 
         [Column("is_active")]
         public bool isActive { get; set; }
+
+        public EnderecoUsuario(int usuario_id, int endereco_id)
+        {
+            this.usuario_id = usuario_id;
+            this.endereco_id = endereco_id;
+            this.isActive = true;
+        }
     }
 }

@@ -68,6 +68,15 @@ namespace back_end.models
             modelBuilder.Entity<EnderecoUsuario>()
             .Property(e => e.isActive)
             .HasDefaultValue(true);
+
+            modelBuilder.Entity<EnderecoUsuario>()
+            .Property(e => e.id)
+            .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Endereco>()
+            .Property(e => e.cep)
+            .IsRequired(false);
+
         }
     }
 }
