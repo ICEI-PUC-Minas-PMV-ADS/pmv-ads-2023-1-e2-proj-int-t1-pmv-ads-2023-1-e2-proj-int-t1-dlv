@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
@@ -6,9 +5,12 @@ import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
+import { useAppProvider } from '../../providers';
+
 const CartItem = ({order}) => {
 
   const {price, name, img} = order
+  const { removeToCart } = useAppProvider()
 
   return (
     <Card 
@@ -32,7 +34,7 @@ const CartItem = ({order}) => {
             </Typography>
         </CardContent>
         <CardActions sx={{display: 'flex', justifyContent: "end", width:'50%'}}>
-            <Button size="small" color='error'>Remover</Button>
+            <Button size="small" color='error' onClick={() => removeToCart(order)}>Remover</Button>
         </CardActions>
     </Card>
   );

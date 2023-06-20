@@ -1,21 +1,19 @@
-
-import { NavBar, OrderCard } from "../../components";
-import { orders } from "../../services";
 import DashboardStyle from "./style";
-import { useNavigate } from "react-router-dom";
-
+import { Footer, NavBar, OrderCard } from "../../components";
 import { useAppProvider } from "../../providers";
+
+
 
 const Dashboard = () => {
 
-    const {token} = useAppProvider()
+    const { selectedItens, getCatalogue } = useAppProvider()
 
-    const navigade = useNavigate()
+    let orders = getCatalogue()
 
-    if (!token){
-        navigade('/login')
-    }
-
+    if ( selectedItens ) {
+        console.log('>>>>>', selectedItens)
+        orders = selectedItens
+    };
 
     return(
         <DashboardStyle>
@@ -25,6 +23,7 @@ const Dashboard = () => {
                     {orders.map( (order, key) => <OrderCard order={order} key={key}/> )}
                 </div>
             </div>
+            <Footer />
         </DashboardStyle>
     )
 };
