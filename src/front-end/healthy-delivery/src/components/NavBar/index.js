@@ -1,5 +1,7 @@
 import Button  from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
+import Grid from '@mui/material/Grid';
+import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
 import { Link } from "@mui/material";
 
 import NavBarStyle from "./style";
@@ -16,7 +18,11 @@ const NavBar = ({type='default'}) => {
     if (type === 'dashboard') isDashboard = true;
     if (type === 'signup' || type === 'login') isSignUpIn = true;
 
-    const {logout } = useAppProvider()
+    const {logout, cartList } = useAppProvider()
+
+    const handleclick = () => {
+        window.location.reload();
+    }
 
 
     return(
@@ -39,7 +45,12 @@ const NavBar = ({type='default'}) => {
                 }
                 {isDashboard &&
                     <div className="div-buttons">
-                        <SearchBar /> 
+                        <SearchBar />
+                        <Grid item sx={{position:'relative', right:'275px', color:'white'}}>
+                            <ThreeSixtyIcon
+                                onClick={handleclick}
+                            />
+                        </Grid> 
                         <Button
                             type="submit"
                             variant="contained"
@@ -59,7 +70,7 @@ const NavBar = ({type='default'}) => {
                         </Button>
                         <Badge
                             anchorOrigin={{vertical: 'top', horizontal: 'right'}}
-                            badgeContent={4}
+                            badgeContent={cartList.length}
                             color="success"
                         >
                             <Button

@@ -61,20 +61,6 @@ const handleForm = async (data) => {
                                 <TextField
                                 required
                                 fullWidth
-                                id="email"
-                                label="E-mail"
-                                name="email"
-                                autoComplete="email"
-                                {...register('email')}
-                                error={!!errors.email}
-                                helperText={errors.email?.message}
-                                />
-                            </Grid>
-
-                            <Grid item xs={12}>
-                                <TextField
-                                required
-                                fullWidth
                                 id="celular"
                                 label="Celular"
                                 name="celular"
@@ -84,7 +70,19 @@ const handleForm = async (data) => {
                                 helperText={errors.celular?.message}
                                 />
                             </Grid>
-
+                            <Grid item xs={12}>
+                                <TextField
+                                required
+                                fullWidth
+                                id="email"
+                                label="E-mail"
+                                name="email"
+                                autoComplete="email"
+                                {...register('email')}
+                                error={!!errors.email}
+                                helperText={errors.email?.message}
+                                />
+                            </Grid>
                             <Grid item xs={12} sm={6}>
                                 <TextField
                                 required

@@ -24,6 +24,14 @@ const Home = () => {
                         type="submit"
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
+                        color="secondary"
+                    >
+                        <Link href={'/dashboard'} underline="none" color={'#FFFFFF'}>Ver cardápio</Link> 
+                    </Button>
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
                         color="success"
                     >
                         <Link href={'/signup'} underline="none" color={'#FFFFFF'}>Fazer cadastro</Link> 

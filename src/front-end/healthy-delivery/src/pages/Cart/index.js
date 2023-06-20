@@ -1,25 +1,23 @@
-import * as React from 'react';
-import { useNavigate, redirect } from "react-router-dom";
+import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { Button, TextField, Autocomplete } from "@mui/material";
 
 import CartStyle from "./style";
-import { orders } from "../../services";
-import { Navigate } from "react-router-dom";
 import { useAppProvider } from "../../providers";
 import { NavBar, CartItem, Footer } from "../../components";
 
 const Cart = () => {
-
-    let total = 0
-    const {token} = useAppProvider()
+    const { token, cartList } = useAppProvider()
     const navegade = useNavigate()
 
     const options = ['Crédito', 'Débito', 'Pix', 'Dinheiro'];
-    const [value, setValue] = React.useState(options[0]);
-    const [inputValue, setInputValue] = React.useState('');
+    const [value, setValue] = useState(options[0]);
+    const [inputValue, setInputValue] = useState('');
 
-    if (!token){
-        navegade('/login')
+    const handleClick = () => {
+        if (!token){
+            navegade('/login')
+        }
     }
 
     return(
@@ -27,7 +25,7 @@ const Cart = () => {
             <NavBar type='cart' />
             <div className="main-container">
                 <div className="orders">
-                    {orders.map( (order, key) => <CartItem order={order} key={key}/> )}
+                    {cartList.map( (order, key) => <CartItem order={order} key={key}/> )}
                 </div>
                 <div className="pay-info">
                     <div className='pay-method'>
@@ -48,19 +46,18 @@ const Cart = () => {
                         />
                     </div>
                     <h1>
-                        Total: R$ {total}
+                        Total: R$ {cartList.reduce((x,y) => y.price + x, 0)}
                     </h1>
                     <Button
                         type="submit"
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
                         color="error"
+                        onClick={handleClick}
                     >
                         Fazer pedido
                     </Button>
                 </div>
-                
-
             </div>
             <Footer />
         </CartStyle>

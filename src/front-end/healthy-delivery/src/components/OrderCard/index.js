@@ -1,14 +1,16 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
+import Button from '@mui/material/Button';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+
+import { useAppProvider } from '../../providers';
 
 const OrderCard = ({order}) => {
 
-  const {descr, price, name, img} = order
+  const { addToCart } = useAppProvider()
+  const {descr, price, name, img} = order;
 
   return (
     <Card sx={{ maxWidth: 345, mr: 3, ml: 3, mb: 3 }}>
@@ -26,10 +28,10 @@ const OrderCard = ({order}) => {
         </Typography>
       </CardContent>
       <CardActions sx={{display: 'flex', justifyContent: "center"}}>
-        <Button size="small">Comprar</Button>
+        <Button size="small" onClick={() => addToCart(order)}>Comprar</Button>
       </CardActions>
     </Card>
   );
-}
+};
 
 export default OrderCard;
